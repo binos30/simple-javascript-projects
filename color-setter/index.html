@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Setter</title>
+  </head>
+  <body>
+    <input type="range" id="color" min="0" max="999999" style="width: 500px" />
+
+    <script>
+      const color = document.getElementById("color");
+
+      color.addEventListener("input", function () {
+        document.body.style.backgroundColor = `#${color.value}`;
+      });
+    </script>
+  </body>
+</html>
