@@ -12,6 +12,9 @@ const winCombos = [
   [2, 4, 6],
 ];
 const cells = document.querySelectorAll(".cell");
+const date = new Date();
+const yearElement = document.getElementById("current-year");
+yearElement && (yearElement.textContent = date.getFullYear().toString());
 
 startGame();
 

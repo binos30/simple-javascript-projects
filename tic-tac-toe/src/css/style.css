@@ -2,6 +2,9 @@
   --text: #acdfb3;
   --bg: #222;
   --btn-bg: #71f171;
+  --body-line-height: 1.5;
+  --bg-opacity: 1;
+  --text-opacity: 1;
 }
 
 * {
@@ -14,11 +17,13 @@ body {
   color: var(--text);
   background-color: var(--bg);
   font-family: sans-serif;
+  line-height: var(--body-line-height);
 }
 
 #play-text {
   text-align: center;
   margin-top: 30px;
+  color: #76ec76;
 }
 
 table {
@@ -73,15 +78,81 @@ td {
 
 button {
   padding: 10px 20px;
+  border: none;
   border-radius: 10px;
   background-color: var(--btn-bg);
   color: white;
   border-color: var(--btn-bg);
   font-size: 18px;
   transition: 200ms transform;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.175);
 }
 
 button:hover {
   cursor: pointer;
   transform: translateY(-2px);
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-x-0 {
+  left: 0;
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.mr-3 {
+  margin-right: 0.75rem; /* 12px */
+}
+
+.mr-4 {
+  margin-right: 1rem; /* 16px */
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-neutral-200 {
+  color: rgb(229 229 229 / var(--text-opacity));
+}
+
+.bg-neutral-700 {
+  background-color: rgb(64 64 64 / var(--bg-opacity));
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
